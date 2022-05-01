@@ -15,6 +15,10 @@
 		B13DD61B281F002000A25F06 /* goMarketplaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13DD61A281F002000A25F06 /* goMarketplaceTests.swift */; };
 		B13DD625281F002000A25F06 /* goMarketplaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13DD624281F002000A25F06 /* goMarketplaceUITests.swift */; };
 		B13DD627281F002100A25F06 /* goMarketplaceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13DD626281F002100A25F06 /* goMarketplaceUITestsLaunchTests.swift */; };
+		B13DD638281F02A800A25F06 /* Chairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13DD637281F02A800A25F06 /* Chairs.swift */; };
+		B13DD63D281F036200A25F06 /* ChairBusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13DD63C281F036200A25F06 /* ChairBusinessModel.swift */; };
+		B13DD63F281F036E00A25F06 /* CheirProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13DD63E281F036E00A25F06 /* CheirProtocol.swift */; };
+		B13DD641281F038800A25F06 /* ChairViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13DD640281F038800A25F06 /* ChairViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		B13DD620281F002000A25F06 /* goMarketplaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = goMarketplaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B13DD624281F002000A25F06 /* goMarketplaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goMarketplaceUITests.swift; sourceTree = "<group>"; };
 		B13DD626281F002100A25F06 /* goMarketplaceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goMarketplaceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B13DD637281F02A800A25F06 /* Chairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chairs.swift; sourceTree = "<group>"; };
+		B13DD63C281F036200A25F06 /* ChairBusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChairBusinessModel.swift; sourceTree = "<group>"; };
+		B13DD63E281F036E00A25F06 /* CheirProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheirProtocol.swift; sourceTree = "<group>"; };
+		B13DD640281F038800A25F06 /* ChairViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChairViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +105,9 @@
 		B13DD602281F001E00A25F06 /* goMarketplace */ = {
 			isa = PBXGroup;
 			children = (
-				B13DD603281F001E00A25F06 /* AppDelegate.swift */,
-				B13DD605281F001E00A25F06 /* SceneDelegate.swift */,
-				B13DD607281F001E00A25F06 /* ViewController.swift */,
-				B13DD60C281F002000A25F06 /* Assets.xcassets */,
+				B13DD636281F029D00A25F06 /* Model */,
+				B13DD633281F021B00A25F06 /* Resources */,
+				B13DD634281F022800A25F06 /* Scenes */,
 				B13DD60E281F002000A25F06 /* LaunchScreen.storyboard */,
 				B13DD611281F002000A25F06 /* Info.plist */,
 			);
@@ -122,6 +129,59 @@
 				B13DD626281F002100A25F06 /* goMarketplaceUITestsLaunchTests.swift */,
 			);
 			path = goMarketplaceUITests;
+			sourceTree = "<group>";
+		};
+		B13DD633281F021B00A25F06 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B13DD60C281F002000A25F06 /* Assets.xcassets */,
+				B13DD603281F001E00A25F06 /* AppDelegate.swift */,
+				B13DD605281F001E00A25F06 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B13DD634281F022800A25F06 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B13DD63B281F032E00A25F06 /* ViewModel */,
+				B13DD63A281F031F00A25F06 /* BusinessModel */,
+				B13DD635281F025400A25F06 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B13DD635281F025400A25F06 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B13DD607281F001E00A25F06 /* ViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B13DD636281F029D00A25F06 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B13DD637281F02A800A25F06 /* Chairs.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B13DD63A281F031F00A25F06 /* BusinessModel */ = {
+			isa = PBXGroup;
+			children = (
+				B13DD63C281F036200A25F06 /* ChairBusinessModel.swift */,
+				B13DD63E281F036E00A25F06 /* CheirProtocol.swift */,
+			);
+			path = BusinessModel;
+			sourceTree = "<group>";
+		};
+		B13DD63B281F032E00A25F06 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B13DD640281F038800A25F06 /* ChairViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,7 +315,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B13DD608281F001E00A25F06 /* ViewController.swift in Sources */,
+				B13DD63F281F036E00A25F06 /* CheirProtocol.swift in Sources */,
+				B13DD641281F038800A25F06 /* ChairViewModel.swift in Sources */,
+				B13DD638281F02A800A25F06 /* Chairs.swift in Sources */,
 				B13DD604281F001E00A25F06 /* AppDelegate.swift in Sources */,
+				B13DD63D281F036200A25F06 /* ChairBusinessModel.swift in Sources */,
 				B13DD606281F001E00A25F06 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
