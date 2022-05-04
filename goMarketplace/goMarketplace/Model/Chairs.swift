@@ -11,5 +11,5 @@ import UIKit
 struct Chairs {
     var image = UIImageView()
     let nameChair: String
-    let priceChair: Int
+    let priceChair: String
 }
